@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>注册页</title>
+  <%- include head %> 
+  <style>
+    .container{
+      width: 45%;
+      margin-top: 30px;
+    }
+    .btn{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="/users/regist" method="POST" class="form-group">
+      <div class="form-group">
+        <label for="username">用户名</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名">
+      </div>
+      <div class="form-group">
+        <label for="password" class="control-label">密码</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码"></input>
+      </div>
+      <div class="form-group">
+        <label for="confirmpwd" class="control-label">确认密码</label>
+        <input type="password" class="form-control" id="confirmpwd" name="confirmpwd" placeholder="请再次输入密码"></input>
+      </div>
+      <div class="form-group">
+        <label for="email" class="control-label">邮箱</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="请输入邮箱地址"></input>
+      </div>
+      <button id="signupsubmit" class="btn btn-primary center" >注册</button>
+      <div class="text-center">已有账号，<a href="/login">立即登录</a>!</div>
+    </form>
+  </div>
+
+</body>
+</html>

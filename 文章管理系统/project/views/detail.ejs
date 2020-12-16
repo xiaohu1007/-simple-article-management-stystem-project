@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>详情页</title>
+    <%- include head %> 
+  </head>
+  <body>
+    <%- include('bar', {username: username}) %> 
+    <div class="container panel panel-default">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2><%= item.title %></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h5><small>作者: <%= item.username %>  发布时间：<%= item.time %></small></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p><%- item.content %></p>
+        </div>
+        <br><br>
+      </div>
+    </div>
+  </body>
+</html>
